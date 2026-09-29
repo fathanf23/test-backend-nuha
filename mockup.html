@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Mockup - PT Data Integrasi Inovasi</title>
+    <style>
+        body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; height: 100vh; background-color: #f3f4f6; }
+        /* Sidebar Styles */
+        .sidebar { width: 260px; background-color: #1e293b; color: white; display: flex; flex-direction: column; overflow-y: auto; }
+        .sidebar-header { padding: 20px; font-size: 20px; font-weight: bold; border-bottom: 1px solid #334155; text-align: center;}
+        .menu-container { padding: 10px 0; }
+        .menu-item { padding: 10px 20px; cursor: pointer; display: block; color: #cbd5e1; text-decoration: none; font-size: 14px;}
+        .menu-item:hover { background-color: #334155; color: white; }
+        .has-child::after { content: ' ▼'; font-size: 10px; float: right; margin-top: 4px; }
+        /* Nested Menu Indentations */
+        .level-1 { padding-left: 20px; font-weight: 600; color: white;}
+        .level-2 { padding-left: 40px; }
+        .level-3 { padding-left: 60px; }
+        .level-4 { padding-left: 80px; }
+        
+        /* Main Content Styles */
+        .main-content { flex: 1; display: flex; flex-direction: column; }
+        .topbar { height: 60px; background-color: white; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+        .user-profile { font-size: 14px; font-weight: bold; color: #475569; }
+        .badge { background-color: #3b82f6; color: white; padding: 4px 8px; border-radius: 4px; font-size: 12px; margin-left: 10px;}
+        .content { padding: 30px; }
+        .card { background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+
+    <!-- SIDEBAR WIREFRAME -->
+    <div class="sidebar">
+        <div class="sidebar-header">NUHA CARE<br><span style="font-size:12px; font-weight:normal; color:#94a3b8">Admin Panel</span></div>
+        <div class="menu-container">
+            <!-- Menu 1 -->
+            <a class="menu-item level-1 has-child">Menu 1</a>
+            <a class="menu-item level-2">Menu 1.1</a>
+            <a class="menu-item level-2 has-child">Menu 1.2</a>
+            <a class="menu-item level-3">Menu 1.2.1</a>
+            <a class="menu-item level-3">Menu 1.2.2</a>
+            <a class="menu-item level-2 has-child">Menu 1.3</a>
+            <a class="menu-item level-3">Menu 1.3.1</a>
+
+            <!-- Menu 2 -->
+            <a class="menu-item level-1 has-child">Menu 2</a>
+            <a class="menu-item level-2">Menu 2.1</a>
+            <a class="menu-item level-2 has-child">Menu 2.2</a>
+            <a class="menu-item level-3">Menu 2.2.1</a>
+            <a class="menu-item level-3 has-child">Menu 2.2.2</a>
+            <a class="menu-item level-4">Menu 2.2.2.1</a>
+            <a class="menu-item level-4">Menu 2.2.2.2</a>
+            <a class="menu-item level-3">Menu 2.2.3</a>
+            <a class="menu-item level-2">Menu 2.3</a>
+
+            <!-- Menu 3 -->
+            <a class="menu-item level-1 has-child">Menu 3</a>
+            <a class="menu-item level-2">Menu 3.1</a>
+            <a class="menu-item level-2">Menu 3.2</a>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT WIREFRAME -->
+    <div class="main-content">
+        <div class="topbar">
+            <div>☰ Dashboard</div>
+            <div class="user-profile">
+                Mochammad Fathan Fadillah 
+                <span class="badge">Role: Administrator</span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="card">
+                <h2>Selamat Datang!</h2>
+                <p>Ini adalah visualisasi (Wireframe/Mockup) bagaimana JSON Hierarki Menu (Recursive) dari API diterjemahkan menjadi tampilan menu bertingkat tanpa batas (Sidebar Kiri) di sisi Frontend.</p>
+                <p>Kriteria: ✅ Dinamis ✅ Mendukung Sub-Menu tanpa batas ✅ Sesuai hak akses role JWT.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
